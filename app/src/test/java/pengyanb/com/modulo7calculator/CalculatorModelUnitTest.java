@@ -3,7 +3,6 @@ package pengyanb.com.modulo7calculator;
 import android.test.suitebuilder.annotation.SmallTest;
 import android.util.Log;
 
-import junit.framework.Assert;
 import junit.framework.TestCase;
 
 import java.util.Random;
@@ -25,6 +24,8 @@ public class CalculatorModelUnitTest extends TestCase {
 
     @SmallTest
     public void testModulo7Calculation(){
+
+
         System.setProperty("java.library.path", "src/main/jniLibs");
         CalculatorModel calculatorModel = new CalculatorModel(); //initiate calculator model
         String[] operations  = new String[]{"+", "-", "x"};     //available operations
@@ -68,7 +69,7 @@ public class CalculatorModelUnitTest extends TestCase {
             assertEquals("Calculator Model - incorrect result: " + result + " = " + calculatorModel.getCalculatedResult(), result, calculatorModel.getCalculatedResult());
         }
         else{
-            Assert.assertTrue("Calculator Model - no result:",false);
+            assertTrue("Calculator Model - no result:",false);
         }
 
     }
