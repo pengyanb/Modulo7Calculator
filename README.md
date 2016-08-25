@@ -13,7 +13,7 @@ android modulo 7 calculator
     |     |        |+--java                                     [Java package]
     |     |             |+--pengyanb.com.modulo7calculator
     |     |             |     |+--CalculatorActivity            [main activity]
-    |     |             |     |+--CalculatorModel               [Model abstraction]
+    |     |             |     |+--CalculatorModel               [Calculator Model abstraction]
     |     |             |+jniLibs                               [compiled native c module]   
     |     |             |+res                                   [resource folders]
     |     |+--test
